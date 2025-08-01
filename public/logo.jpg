@@ -1,0 +1,7 @@
+There is no existing code. Please write it as a new file.
+
+// Ensure to include app/guides-dummy/page.tsx in the list of files
+const filesToInclude = [
+"public/logo.jpg",
+"app/guides-dummy/page.tsx"
+];

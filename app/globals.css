@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    /* Traozom Custom Colors - Light Theme */
+    --travozom-gold: 39 90% 60%; /* A warm, inviting gold */
+    --travozom-dark-gold: 39 90% 50%;
+    --travozom-deep-brown: 20 40% 15%; /* Dark, rich brown for text/accents */
+    --travozom-darker-brown: 20 30% 20%;
+    --travozom-dark-beige: 30 20% 40%; /* Muted, earthy beige for secondary text */
+    --travozom-beige: 30 20% 95%; /* Light, warm background */
+    --travozom-cream: 40 60% 98%; /* Creamy white for backgrounds */
+    --travozom-bronze: 28 40% 30%; /* A deeper, metallic bronze */
+    --travozom-light-beige: 30 20% 70%; /* Lighter beige for text */
+    --travozom-medium-brown: 20 30% 30%; /* Medium brown for borders */
+    --travozom-darkest-brown: 20 40% 10%; /* Darkest brown for nav/header */
+  }
+
+  .dark {
+    --background: 20 40% 10%; /* Darker background for dark mode */
+    --foreground: 30 20% 98%; /* Lighter text for dark mode */
+
+    --card: 20 40% 15%;
+    --card-foreground: 30 20% 98%;
+
+    --popover: 20 40% 15%;
+    --popover-foreground: 30 20% 98%;
+
+    --primary: 30 20% 98%;
+    --primary-foreground: 20 40% 15%;
+
+    --secondary: 20 40% 20%;
+    --secondary-foreground: 30 20% 98%;
+
+    --muted: 20 40% 20%;
+    --muted-foreground: 30 20% 70%;
+
+    --accent: 20 40% 20%;
+    --accent-foreground: 30 20% 98%;
+
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 30 20% 98%;
+
+    --border: 20 40% 25%;
+    --input: 20 40% 25%;
+    --ring: 30 20% 98%;
+
+    /* Traozom Custom Colors - Dark Theme */
+    --travozom-gold: 39 90% 60%;
+    --travozom-dark-gold: 39 90% 50%;
+    --travozom-deep-brown: 20 40% 15%;
+    --travozom-darker-brown: 20 30% 20%;
+    --travozom-dark-beige: 30 20% 40%;
+    --travozom-beige: 30 20% 95%;
+    --travozom-cream: 40 60% 98%;
+    --travozom-bronze: 28 40% 30%;
+    --travozom-light-beige: 30 20% 70%; /* Lighter beige for dark mode text */
+    --travozom-medium-brown: 20 30% 30%; /* Medium brown for dark mode borders */
+    --travozom-darkest-brown: 20 40% 10%; /* Even darker brown for nav/header */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-lato);
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-playfair);
+  }
+}
+
+/* Custom gold glow for buttons */
+.gold-glow {
+  box-shadow: 0 0 5px var(--travozom-gold), 0 0 10px var(--travozom-gold);
+}
